@@ -1,0 +1,41 @@
+.container__resenas {
+    background-color: rgb(238, 237, 237);
+    height: 55vh;
+}
+
+.main__resenas {
+    view-timeline-name: --mostrar;
+    view-timeline-axis: block;
+
+    animation-timeline: --mostrar;
+    animation-name: show;
+
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.tituloprincipal__resenas {
+    margin-top: 5vh;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 3vh;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}

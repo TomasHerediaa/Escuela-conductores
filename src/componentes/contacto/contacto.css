@@ -1,0 +1,201 @@
+
+.contacto__main{ 
+    background-color: #fff;
+    height: 70vh;
+}
+
+.form__conteinermain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactoform__main {
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 900px;
+    font-family: var(--poppins);
+}
+
+.form__conteiner {
+    margin-bottom: 20px;
+}
+
+.form__conteiner label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form__conteiner button {
+    display: block;
+    margin: auto;
+    background: #ff3936;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 900px;
+
+}
+
+.form__conteiner button:hover {
+background: #bd0003;
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+    .contacto__main{ 
+        background-color: #fff;
+        height: 76vh;
+    }
+
+    .contactoform__main {
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        width: 600px;
+        font-family: var(--poppins);
+    }
+
+    .form__conteiner button {
+        display: block;
+        margin: auto;
+        background: #ff3936;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        width: 600px;
+    
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .contacto__main{ 
+        background-color: #fff;
+        height: 76vh;
+    }
+
+    .contactoform__main {
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        width: 500px;
+        font-family: var(--poppins);
+    }
+
+    .form__conteiner button {
+        display: block;
+        margin: auto;
+        background: #ff3936;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        width: 500px;
+    
+    }
+
+}
+
+
+@media only screen and (min-width:425px) and (max-width:767px){
+    .contacto__main{ 
+        background-color: #fff;
+        height: 80vh;
+    }
+
+    .contactoform__main {
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        width: 280px;
+        font-family: var(--poppins);
+    }
+
+    .form__conteiner button {
+        display: block;
+        margin: auto;
+        background: #ff3936;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        width: 280px;
+    
+    }
+
+    .form__conteiner label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 1.9vh;
+        color: #555;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:424px){
+    .contacto__main{ 
+        background-color: #fff;
+        height: 80vh;
+    }
+
+    .contactoform__main {
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        width: 230px;
+        font-family: var(--poppins);
+    }
+
+    .form__conteiner button {
+        display: block;
+        margin: auto;
+        background: #ff3936;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        width: 230px;
+    
+    }
+
+    .form__conteiner label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 1.6vh;
+        color: #555;
+    }
+
+}

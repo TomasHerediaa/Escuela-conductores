@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container__main {
+    height: 47vh;
+    background-color: #ffff;
+
+    view-timeline-name: --mostrar;
+    view-timeline-axis: block;
+
+    animation-timeline: --mostrar;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+.vehiculosinfo__main {
+    display: flex;
+    justify-content: center;
+}
+
+.dobleComando__main {
+    margin-top: 15vh;
+    width: 50vh;
+}
+
+.dobleComando__main img {
+    margin: 0 45%;
+}
+
+.sensor__main {
+    margin-top: 15vh;
+    width: 50vh;
+}
+
+.sensor__main img {
+    margin: 0 45%;
+}
+
+.titulo__main,
+.parrafo__main {
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.titulo__main {
+    margin-top: 4vh;
+    font-size: 2.5vh;
+}
+
+.parrafo__main {
+    margin-top: 1vh;
+    font-size: 1.6vh;
+    font-weight: 500;
+}
+
+.tituloprincipal__main {
+    margin-top: 3vh;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 3vh;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+    .dobleComando__main {
+        margin-top: 10vh;
+        width: 42vh;
+    }
+
+    .sensor__main {
+        margin-top: 10vh;
+        width: 42vh;
+
+
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .dobleComando__main {
+        margin-top: 7vh;
+        width: 32vh;
+    }
+
+    .dobleComando__main img {
+        margin: 0 30%;
+    }
+
+    .sensor__main {
+        margin-top: 7vh;
+        width: 32vh;
+    }
+
+    .sensor__main img {
+        margin: 0 30%;
+    }
+
+    .vehiculosinfo__main {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (min-width:425px) and (max-width:767px){
+    .vehiculosinfo__main {
+        display: block;
+    }
+
+    .container__main {
+        height: 80vh;
+        background-color: #ffff;
+    
+        view-timeline-name: --mostrar;
+        view-timeline-axis: block;
+    
+        animation-timeline: --mostrar;
+        animation-name: show;
+    
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
+    }
+    
+    .dobleComando__main {
+        margin-top: 7vh;
+        width: 42vh;
+        margin-left: 10%;
+    }
+
+    
+    .dobleComando__main img {
+        margin: 0 40%;
+    }
+
+    .sensor__main {
+        margin-top: 7vh;
+        width: 42vh;
+        margin-left: 10%;
+    }
+
+    .sensor__main img {
+        margin: 0 40%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:424px){
+
+    .vehiculosinfo__main {
+        display: block;
+    }
+
+    .container__main {
+        height: 87vh;
+        background-color: #ffff;
+    
+        view-timeline-name: --mostrar;
+        view-timeline-axis: block;
+    
+        animation-timeline: --mostrar;
+        animation-name: show;
+    
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
+    }
+    
+    .dobleComando__main {
+        margin-top: 7vh;
+        width: 32vh;
+        margin-left: 10%;
+    }
+
+    
+    .dobleComando__main img {
+        margin: 0 30%;
+    }
+
+    .sensor__main {
+        margin-top: 7vh;
+        width: 32vh;
+        margin-left: 10%;
+    }
+
+    .sensor__main img {
+        margin: 0 30%;
+    }
+
+
+}
