@@ -1,6 +1,4 @@
-import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import Todojunto from './todojunto.jsx';
 import Precios from './componentes/precios/Precios.jsx';
 

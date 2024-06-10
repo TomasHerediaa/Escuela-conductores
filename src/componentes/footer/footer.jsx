@@ -1,4 +1,4 @@
-import './footer.css'
+import "../../global_css.css"
 
 function Footer() {
 

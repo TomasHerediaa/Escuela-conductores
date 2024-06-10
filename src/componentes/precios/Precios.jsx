@@ -1,9 +1,11 @@
-import './Precios.css'
+import "../../global_css.css"
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react"
-import Wsp from './Wp.png'
+import Wsp from '../../assets/png/Wp.png'
 import Footer from '../footer/footer';
+import CardPack from "../../../components/card";
+import CardPackVIP from "../../../components/cardvip";
 
 function Precios() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -50,81 +52,15 @@ function Precios() {
             <section className="container__preciosmain">
                 <div className="container__precios">
                     <div className="titulo__precioscontainer">
-                        <h1 className="tituloprincipal__precios"> Packs de clases </h1>
+                        <h1 className="tituloprincipal__precios"> PACKS DE CLASES </h1>
                     </div>
                     <div className="containermain__precios">
 
                         <div className="containercard__preciosmain">
-                            <div className="containercard__precios">
-                                <div className="titulocard__precios">
-                                    <h3>PACK BASICO 1</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__precios">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__precios">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="preciobtn__precios">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="containercard__precios">
-                                <div className="titulocard__precios">
-                                    <h3>PACK BASICO 2</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__precios">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__precios">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="preciobtn__precios">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="containercard__precios">
-                                <div className="titulocard__precios">
-                                    <h3>PACK BASICO 3</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__precios">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__precios">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="preciobtn__precios">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="containercard__precios">
-                                <div className="titulocard__precios">
-                                    <h3>PACK BASICO 4</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__precios">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__precios">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="preciobtn__precios">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
+                           <CardPack titulo="PACK BASICO 1" texto="6 Clases Practicas" duracion="(Duración total 3hs)" precio="$68000" />
+                           <CardPack titulo="PACK BASICO 2" texto="6 Clases Practicas" duracion="(Duración total 3hs)" precio="$68000" />
+                           <CardPack titulo="PACK BASICO 3" texto="6 Clases Practicas" duracion="(Duración total 3hs)" precio="$68000" />
+                           <CardPack titulo="PACK BASICO 4" texto="6 Clases Practicas" duracion="(Duración total 3hs)" precio="$68000" />
                         </div>
                     </div>
                 </div>
@@ -133,114 +69,14 @@ function Precios() {
             <section className="container__preciosmainvip">
                 <div className="container__preciosvip">
                     <div className="titulo__precioscontainervip">
-                        <h1 className="tituloprincipal__precios"> Packs de clases <span className='vip'>VIP</span></h1>
+                        <h1 className="tituloprincipal__precios"> PACKS DE CLASES <span className='vip'>VIP</span></h1>
                     </div>
                     <div className="containermain__precios">
-
                         <div className="containercard__preciosmainvip">
-                            <div className="containercard__preciosvip">
-                                <div className="titulocard__preciosvip">
-                                    <h3>PACK PREMIUM 1</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__preciosvip">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__preciosvip">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="vehiculocard__precosvip">
-                                        <h3>Vehículo para rendir</h3>
-                                    </div>
-                                    <div className="materialcard__precovips">
-                                        <h3>Material y certificado teórico</h3>
-                                    </div>
-                                    <div className="tramites__precosvip">
-                                        <h3>Gestión de Tramites</h3>
-                                    </div>
-                                    <div className="preciobtn__preciosvip">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="containercard__preciosvip">
-                                <div className="titulocard__preciosvip">
-                                    <h3>PACK PREMIUM 2</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__preciosvip">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__preciosvip">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="vehiculocard__precosvip">
-                                        <h3>Vehículo para rendir</h3>
-                                    </div>
-                                    <div className="materialcard__precovips">
-                                        <h3>Material y certificado teórico</h3>
-                                    </div>
-                                    <div className="tramites__precosvip">
-                                        <h3>Gestión de Tramites</h3>
-                                    </div>
-                                    <div className="preciobtn__preciosvip">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="containercard__preciosvip">
-                                <div className="titulocard__preciosvip">
-                                    <h3>PACK PREMIUM 3</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__preciosvip">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__preciosvip">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="vehiculocard__precosvip">
-                                        <h3>Vehículo para rendir</h3>
-                                    </div>
-                                    <div className="materialcard__precovips">
-                                        <h3>Material y certificado teórico</h3>
-                                    </div>
-                                    <div className="tramites__precosvip">
-                                        <h3>Gestión de Tramites</h3>
-                                    </div>
-                                    <div className="preciobtn__preciosvip">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="containercard__preciosvip">
-                                <div className="titulocard__preciosvip">
-                                    <h3>PACK PREMIUM 4</h3>
-                                </div>
-                                <div className="clasesinfo__preciosmain">
-                                    <div className="clasescard__preciosvip">
-                                        <h5>6 Clases Practicas</h5>
-                                    </div>
-                                    <div className="duracioncard__preciosvip">
-                                        <p>(Duración total 3hs)</p>
-                                    </div>
-                                    <div className="vehiculocard__precosvip">
-                                        <h3>Vehículo para rendir</h3>
-                                    </div>
-                                    <div className="materialcard__precovips">
-                                        <h3>Material y certificado teórico</h3>
-                                    </div>
-                                    <div className="tramites__precosvip">
-                                        <h3>Gestión de Tramites</h3>
-                                    </div>
-                                    <div className="preciobtn__preciosvip">
-                                        <button>$68000</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <CardPackVIP titulo="PACK BASICO 1" texto="6 Clases Practicas" duracion="(Duración total 3hs)" vehiculo="Vehículo para rendir" material="Material y certificado teórico" gestion="Gestión de Tramites" precio="$68000" />
+                        <CardPackVIP titulo="PACK BASICO 2" texto="6 Clases Practicas" duracion="(Duración total 3hs)" vehiculo="Vehículo para rendir" material="Material y certificado teórico" gestion="Gestión de Tramites" precio="$68000" />
+                        <CardPackVIP titulo="PACK BASICO 3" texto="6 Clases Practicas" duracion="(Duración total 3hs)" vehiculo="Vehículo para rendir" material="Material y certificado teórico" gestion="Gestión de Tramites" precio="$68000" />
+                        <CardPackVIP titulo="PACK BASICO 4" texto="6 Clases Practicas" duracion="(Duración total 3hs)" vehiculo="Vehículo para rendir" material="Material y certificado teórico" gestion="Gestión de Tramites" precio="$68000" />
                         </div>
                     </div>
                 </div>

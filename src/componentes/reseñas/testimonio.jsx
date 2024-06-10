@@ -1,5 +1,5 @@
 import React from 'react';
-import './testimonio.css'; // Añade estilos según tus necesidades
+import "../../global_css.css"
 
 const TestimonialCard = ({ testimonial }) => {
   const { name, image, rating, content } = testimonial;

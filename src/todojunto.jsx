@@ -1,4 +1,3 @@
-import './App.css'
 import Hero from './componentes/hero/hero.jsx';
 import Main from './componentes/main/main.jsx';
 import Reseñas from './componentes/reseñas/reseñas.jsx';

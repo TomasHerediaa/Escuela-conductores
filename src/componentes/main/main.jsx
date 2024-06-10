@@ -1,6 +1,6 @@
-import './main.css'
-import IconoAuto from './car.svg'
-import IconoInfo from './info.svg'
+import "../../global_css.css"
+import IconoAuto from '../../assets/svg/car.svg'
+import IconoInfo from '../../assets/svg/info.svg'
 
 function Main() {
 

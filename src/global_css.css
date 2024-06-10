@@ -1,0 +1,1704 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --margen-hero: 4vh;
+    --color-principal: #ffff;
+    --color-secundario: #ff3936;
+    --poppins: 'Poppins', sans-serif;
+    --tamaño-fuente: 1.8vh;
+    --tamaño-fuente-hero: 6vh;
+    --grosor-fuente: 500;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/*
+--------------------------------------------------
+-- HERO  
+--------------------------------------------------
+*/
+
+.hero__main {
+    background-image: url(../src/assets/png/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    height: 40vh;
+}
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.6fr 2fr;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffff;
+    font-family: var(--poppins);
+    color: var(--color-principal);
+    font-weight: var(--grosor-fuente);
+    font-size: var(--tamaño-fuente);
+    margin: var(--margen-hero);
+}
+
+.logo {
+    font-family: var(--poppins);
+    color: var(--color-principal);
+    font-weight: var(--grosor-fuente);
+    font-size: var(--tamaño-fuente);
+    margin: 3vh;
+    font-size: 3vh;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.maincontainer__hero {
+    height: 60vh;
+    top: 50%;
+    margin-left: 20vh;
+}
+
+.texto__hero {   
+    display: grid; 
+    font-family: var(--poppins);
+    color: var(--color-secundario);
+    font-weight: 100;
+    font-size: 3.3vh;
+}
+
+.texto__h1 {
+    font-family: var(--poppins);
+    color: var(--color-principal);
+    font-weight: 600;
+    font-size: var(--tamaño-fuente-hero);
+}
+
+.btn__hero {
+    border: none;
+    border-radius: 25px;
+    font-family: var(--poppins);
+    font-size: 2vh;
+    font-weight: 300;
+    padding: 20px 49px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    margin-top: 17px;
+}
+
+
+.btn__hero:hover {
+    background: #bd0003;
+}
+
+.flechaAbajo {
+    display: flex;
+    margin-top: 30vh;
+    margin-left: 75vh;
+}
+
+.btn-wsp{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:75px;
+    height:75px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+.logo-wsp img {
+    z-index: 200;
+}
+
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+.GiHamburgerMenu {
+    color: #010101;
+    width: 22px;
+    height: 22px;
+}
+
+.navigation {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    color: #ffff;
+    background-color: transparent;
+}
+
+.brand-name {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.navigation-menu {
+    margin-left: auto;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: #f9f9f9;
+}
+
+
+
+/*
+--------------------------------------------------
+-- MAIN  
+--------------------------------------------------
+*/
+.container__main {
+    height: 50vh;
+    background-color: #ffff;
+
+    view-timeline-name: --mostrar;
+    view-timeline-axis: block;
+
+    animation-timeline: --mostrar;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+.vehiculosinfo__main {
+    display: flex;
+    justify-content: center;
+}
+
+.dobleComando__main {
+    margin-top: 15vh;
+    width: 50vh;
+}
+
+.dobleComando__main img {
+    margin: 0 45%;
+}
+
+.sensor__main {
+    margin-top: 15vh;
+    width: 50vh;
+}
+
+.sensor__main img {
+    margin: 0 45%;
+}
+
+.titulo__main,
+.parrafo__main {
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.titulo__main {
+    margin-top: 4vh;
+    font-size: 2.5vh;
+}
+
+.parrafo__main {
+    margin-top: 1vh;
+    font-size: 1.6vh;
+    font-weight: 500;
+}
+
+.tituloprincipal__main {
+    margin-top: 3vh;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 3vh;
+}
+
+
+
+/*
+--------------------------------------------------
+-- RESEÑAS  
+--------------------------------------------------
+*/
+.container__resenas {
+    background-color: rgb(238, 237, 237);
+    height: 60vh;
+}
+
+.main__resenas {
+    view-timeline-name: --mostrar;
+    view-timeline-axis: block;
+
+    animation-timeline: --mostrar;
+    animation-name: show;
+
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+
+}
+
+.tituloprincipal__resenas {
+    padding-top: 5vh;
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 3vh;
+}
+
+
+
+/*
+--------------------------------------------------
+-- TESTIMONIO  
+--------------------------------------------------
+*/
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin: 0vh 20vh;
+  }
+  
+.testimonial-card {
+    height: 370px;
+    width: 320px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+  
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+  
+.name {
+    font-family: var(--poppins);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+  
+.rating {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+  
+.content {
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 0.90rem;
+    text-align: center;
+}
+  
+
+
+/*
+--------------------------------------------------
+-- CONTACTO  
+--------------------------------------------------
+*/
+.contacto__main{ 
+    background-color: #fff;
+    height: 70vh;
+}
+
+.form__conteinermain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactoform__main {
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 900px;
+    font-family: var(--poppins);
+}
+
+.form__conteiner {
+    margin-bottom: 20px;
+}
+
+.form__conteiner label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form__conteiner button {
+    display: block;
+    margin: auto;
+    background: #ff3936;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 900px;
+
+}
+
+.form__conteiner button:hover {
+background: #bd0003;
+}
+
+
+
+/*
+--------------------------------------------------
+-- FOOTER  
+--------------------------------------------------
+*/
+.footer__main {
+    height: 27vh;
+    background-color: #202325
+}
+
+
+.logo__footer {
+    font-family: var(--poppins);
+    color: var(--color-principal);
+    font-weight: var(--grosor-fuente);
+    font-size: var(--tamaño-fuente);
+    margin: 3vh;
+    font-size: 3vh;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.footer__mainfcontainer {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1.5fr 3.8fr;
+}
+
+.lista__footermain {
+    margin-top: 5vh;
+    color: #fff;
+    font-family: var(--poppins);
+}
+
+.lista__footermain ul {
+    list-style: none;
+}
+
+.lista__footertitulo {
+    font-size: 19px;
+    color: #ff3936;
+    margin-bottom: 1.5vh;
+}
+
+.logo__main {
+    margin-top: 5vh;
+}
+
+.lista__footer li {
+    font-size: 17px;
+}
+
+
+
+/*
+--------------------------------------------------
+-- PRECIOS  
+--------------------------------------------------
+*/
+.header--precios {
+    height: 10vh;
+    background-color: #000000;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+   
+}
+
+.main-precios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.6fr 2fr;
+}
+
+.lista-precios {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffff;
+    font-family: var(--poppins);
+    color: var(--color-principal);
+    font-weight: var(--grosor-fuente);
+    font-size: var(--tamaño-fuente);
+    margin: var(--margen-hero);
+}
+
+
+.logo-precios {
+    font-family: var(--poppins);
+    color: var(--color-principal);
+    font-weight: var(--grosor-fuente);
+    font-size: var(--tamaño-fuente);
+    margin: 3vh;
+    font-size: 3vh;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.titulo__precioscontainer {
+    margin-top: 15vh;
+}
+
+.container__preciosmain {
+    margin-top: 10vh;
+    height: 90vh;
+    background-color: #fff;
+}
+
+.container__preciosmainvip {
+    height: 120vh;
+}
+
+.tituloprincipal__precios {
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 5vh;
+    margin-top: 10vh;
+}
+
+.containermain__precios {
+    display: flex;
+    justify-content: center;
+}
+
+.containercard__preciosmain {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+}
+
+
+.containercard__precios {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 110px 35px 110px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.titulocard__precios {
+    font-size: 1.5rem;
+    margin-top: 1.5vh;
+    color: #ffff;
+}
+
+.clasescard__precios {
+    margin-top: 3.5vh;
+    font-size: 1.4rem;
+    color: #ffff;
+}
+
+.duracioncard__precios {
+    margin-top: .1vh;
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.preciobtn__precios button{
+    border: none;
+    border-radius: 25px;
+    font-family: var(--poppins);
+    font-size: 2vh;
+    font-weight: 400;
+    padding: 7px 39px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    margin-top: 5.5vh;  
+}
+
+.vip {
+    color: var(--color-secundario);
+}
+
+.containercard__preciosmainvip {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+}
+
+.containercard__preciosvip {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 110px 35px 110px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.titulocard__preciosvip {
+    font-size: 1.6rem;
+    margin-top: 1.5vh;
+    color: #ffff;
+}
+
+.clasescard__preciosvip {
+    margin-top: 3.5vh;
+    font-size: 1.4rem;
+    color: #ffff;
+}
+
+.duracioncard__preciosvip {
+    margin-top: .1vh;
+    margin-bottom: 4vh;
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.vehiculocard__precosvip, .materialcard__precovips, .tramites__precosvip {
+    margin-top: .6vh;
+    color: #ffff;
+    font-family: var(--poppins);
+    font-size: 1.5vh;
+    font-weight: 400;
+}
+
+.preciobtn__preciosvip button{
+    border: none;
+    border-radius: 25px;
+    font-family: var(--poppins);
+    font-size: 2vh;
+    font-weight: 400;
+    padding: 7px 39px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    margin-top: 2.3vh;  
+}
+
+.preciobtn__precios button:hover, .preciobtn__preciosvip button:hover {
+    background: #bd0003;
+}
+    
+.navigation2 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    color: #ffff;
+  }
+
+.lista {
+    gap: 15px;
+}
+
+
+
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes enhance-header {
+    to {
+        background: #202325da;
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1600px){
+/*
+--------------------------------------------------
+-- HERO  
+--------------------------------------------------
+*/
+    .main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: .6fr 1fr .1fr;
+    }
+
+    .flechaAbajo {
+        display: flex;
+        margin: 28vh 0 0 55vh;
+    }
+
+
+
+/*
+--------------------------------------------------
+-- MAIN  
+--------------------------------------------------
+*/
+    .dobleComando__main {
+        margin-top: 10vh;
+        width: 42vh;
+    }
+
+    .sensor__main {
+        margin-top: 10vh;
+        width: 42vh;
+    }
+
+    .vehiculosinfo__main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+/*
+--------------------------------------------------
+-- TESTIMONIO  
+--------------------------------------------------
+*/
+    .testimonial-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: 0vh 45vh;
+      }
+    
+      .testimonial-card {
+        height: 310px;
+        width: 320px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+      }
+    
+      .name {
+        font-family: var(--poppins);
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+    
+      .rating {
+        color: #ffcc00;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+    
+      .content {
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 0.80rem;
+        text-align: center;
+      }
+    
+      .container__resenas {
+        background-color: rgb(238, 237, 237);
+        height: 100vh;
+      }
+
+
+
+/*
+--------------------------------------------------
+-- CONTACTO  
+--------------------------------------------------
+*/
+.contacto__main{ 
+    background-color: #fff;
+    height: 76vh;
+}
+
+.contactoform__main {
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 600px;
+    font-family: var(--poppins);
+}
+
+.form__conteiner button {
+    display: block;
+    margin: auto;
+    background: #ff3936;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 600px;
+}
+
+
+
+/*
+--------------------------------------------------
+-- FOOTER  
+--------------------------------------------------
+*/
+.footer__main {
+    height: 30vh;
+    background-color: #202325
+}
+
+.footer__mainfcontainer {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1.5fr 1.8fr;
+}
+
+
+
+/*
+--------------------------------------------------
+-- PRECIOS  
+--------------------------------------------------
+*/
+.titulo__precioscontainer {
+    margin-top: 15vh;
+}
+
+.containercard__preciosmain {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+}
+
+.containercard__precios {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 110px 45px 110px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+
+.containercard__preciosmainvip {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+}
+
+.containercard__preciosvip {
+   background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 110px 45px 110px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+/*
+--------------------------------------------------
+-- HERO  
+--------------------------------------------------
+*/
+    .main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: .3fr 2.5fr .1fr;
+    }
+
+    .flechaAbajo {
+        display: flex;
+        margin: 28vh 0 0 40vh;
+
+    }
+    
+    .maincontainer__hero {
+        height: 60vh;
+        top: 50%;
+        margin-left: 9vh;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        color: #ffff;
+        font-family: var(--poppins);
+        color: var(--color-principal);
+        font-weight: var(--grosor-fuente);
+        font-size: 1.3vh;
+        margin: 2vh;
+        text-wrap: nowrap;
+    }
+
+    .navigation-menu li {
+        list-style-type: none;
+        margin: 0 .8rem;
+    }
+
+
+
+/*
+--------------------------------------------------
+-- MAIN  
+--------------------------------------------------
+*/
+    .dobleComando__main {
+        margin-top: 7vh;
+        width: 32vh;
+    }
+
+    .dobleComando__main img {
+        margin: 0 30%;
+    }
+
+    .sensor__main {
+        margin-top: 7vh;
+        width: 32vh;
+    }
+
+    .sensor__main img {
+        margin: 0 30%;
+    }
+
+    .vehiculosinfo__main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+/*
+--------------------------------------------------
+-- TESTIMONIO  
+--------------------------------------------------
+*/
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0vh 35vh;
+  }
+
+  .testimonial-card {
+    height: 250px;
+    width: 320px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .name {
+    font-family: var(--poppins);
+    font-size: .9rem;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 0.70rem;
+    text-align: center;
+  }
+
+  .container__resenas {
+    background-color: rgb(238, 237, 237);
+    height: 125vh;
+  }
+
+  .profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+  }
+
+
+
+/*
+--------------------------------------------------
+-- CONTACTO  
+--------------------------------------------------
+*/
+.contacto__main{ 
+    background-color: #fff;
+    height: 76vh;
+}
+
+.contactoform__main {
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 500px;
+    font-family: var(--poppins);
+}
+
+.form__conteiner button {
+    display: block;
+    margin: auto;
+    background: #ff3936;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 500px;
+}
+
+
+
+/*
+--------------------------------------------------
+-- FOOTER  
+--------------------------------------------------
+*/
+.footer__main {
+    height: 40vh;
+    background-color: #202325
+}
+
+.footer__mainfcontainer {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1.5fr 1.8fr;
+}
+
+.lista__footermain {
+    margin: 15vh 5vh 0 -3vh;
+    color: #fff;
+    font-family: var(--poppins);
+}
+
+
+
+/*
+--------------------------------------------------
+-- PRECIOS  
+--------------------------------------------------
+*/
+.titulo__precioscontainer {
+    margin-top: 15vh;
+}
+
+.containercard__preciosmain {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+}
+
+.containercard__precios {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 45px 45px 45px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+
+.containercard__preciosmainvip {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5vh;
+}
+
+.containercard__preciosvip {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 45px 45px 45px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.container__preciosmainvip {
+    height: 205vh;
+}
+}
+
+
+@media only screen and (min-width:425px) and (max-width:767px){
+/*
+--------------------------------------------------
+-- HERO  
+--------------------------------------------------
+*/
+    .main .lista {
+       display: none;
+    }
+
+    .flechaAbajo {
+        display: none;
+    }
+    
+    .maincontainer__hero {
+        height: 60vh;
+        top: 50%;
+        margin-left: 4vh;
+    }
+
+
+
+/*
+--------------------------------------------------
+-- MAIN  
+--------------------------------------------------
+*/
+.vehiculosinfo__main {
+    display: block;
+}
+
+.container__main {
+    height: 80vh;
+    background-color: #ffff;
+
+    view-timeline-name: --mostrar;
+    view-timeline-axis: block;
+
+    animation-timeline: --mostrar;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+.dobleComando__main {
+    width: 42vh;
+    margin: 7vh 0 0 10%;
+
+}
+
+
+.dobleComando__main img {
+    margin: 0 40%;
+}
+
+.sensor__main {
+    width: 42vh;
+    margin: 7vh 0 0 10%;
+
+}
+
+.sensor__main img {
+    margin: 0 40%;
+}
+
+
+
+/*
+--------------------------------------------------
+-- TESTIMONIO  
+--------------------------------------------------
+*/
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0vh 25vh;
+  }
+
+  .testimonial-card {
+    height: 290px;
+    width: 220px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+
+  }
+
+  .name {
+    font-family: var(--poppins);
+    font-size: .8rem;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    color: #ffcc00;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 0.66rem;
+    text-align: center;
+  }
+
+  .container__resenas {
+    background-color: rgb(238, 237, 237);
+    height: 160vh;
+  }
+
+  .profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+  }
+
+
+
+/*
+--------------------------------------------------
+-- CONTACTO  
+--------------------------------------------------
+*/
+.contacto__main{ 
+    background-color: #fff;
+    height: 80vh;
+}
+
+.contactoform__main {
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 280px;
+    font-family: var(--poppins);
+}
+
+.form__conteiner button {
+    display: block;
+    margin: auto;
+    background: #ff3936;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 280px;
+}
+
+.form__conteiner label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.9vh;
+    color: #555;
+}
+
+
+
+/*
+--------------------------------------------------
+-- FOOTER  
+--------------------------------------------------
+*/
+.footer__main {
+    height: 70vh;
+    background-color: #202325
+}
+
+.footer__mainfcontainer {
+    display: inline-block;
+}
+
+.lista__footermain {
+    margin: 3vh 5vh 0 5vh;
+    color: #fff;
+    font-family: var(--poppins);
+}
+
+
+
+/*
+--------------------------------------------------
+-- PRECIOS  
+--------------------------------------------------
+*/
+.tituloprincipal__precios {
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 4.6vh;
+    margin-top: 10vh;
+}
+
+
+.titulo__precioscontainer {
+    margin-top: 15vh;
+}
+
+.container__preciosmain {
+    margin-top: 10vh;
+    height: 170vh;
+    background-color: #fff;
+}
+
+.containercard__preciosmain {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5vh;
+}
+
+.containercard__precios {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 45px 45px 45px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+
+.containercard__preciosmainvip {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5vh;
+}
+
+.containercard__preciosvip {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 45px 45px 45px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.container__preciosmainvip {
+    height: 230vh;
+}
+}
+
+
+@media only screen and (min-width:320px) and (max-width:424px){
+/*
+--------------------------------------------------
+-- HERO  
+--------------------------------------------------
+*/  
+    .main .lista {
+        display: none;
+     }
+ 
+     .flechaAbajo {
+         display: none;
+     }
+     
+     .maincontainer__hero {
+         height: 60vh;
+         top: 50%;
+         margin-left: 4vh;
+     }
+
+
+
+/*
+--------------------------------------------------
+-- MAIN  
+--------------------------------------------------
+*/       
+    .vehiculosinfo__main {
+        display: block;
+    }
+
+    .container__main {
+        height: 87vh;
+        background-color: #ffff;
+    
+        view-timeline-name: --mostrar;
+        view-timeline-axis: block;
+    
+        animation-timeline: --mostrar;
+        animation-name: show;
+    
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
+    }
+    
+    .dobleComando__main {
+        width: 32vh;
+        margin: 7vh 0 0 10%;
+    }
+
+    
+    .dobleComando__main img {
+        margin: 0 30%;
+    }
+
+    .sensor__main {
+        width: 32vh;
+        margin: 7vh 0 0 10%;
+    }
+
+    .sensor__main img {
+        margin: 0 30%;
+    }
+
+
+
+/*
+--------------------------------------------------
+-- TESTIMONIO  
+--------------------------------------------------
+*/
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0vh 15vh;
+  }
+
+  .testimonial-card {
+    height: 290px;
+    width: 210px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+
+  }
+
+  .name {
+    font-family: var(--poppins);
+    font-size: .8rem;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    color: #ffcc00;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 0.66rem;
+    text-align: center;
+  }
+
+  .container__resenas {
+    background-color: rgb(238, 237, 237);
+    height: 200vh;
+  }
+
+  .profile-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+  }
+
+
+
+/*
+--------------------------------------------------
+-- CONTACTO  
+--------------------------------------------------
+*/
+.contacto__main{ 
+    background-color: #fff;
+    height: 80vh;
+}
+
+.contactoform__main {
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 230px;
+    font-family: var(--poppins);
+}
+
+.form__conteiner button {
+    display: block;
+    margin: auto;
+    background: #ff3936;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 230px;
+
+}
+
+.form__conteiner label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.6vh;
+    color: #555;
+}
+
+
+
+/*
+--------------------------------------------------
+-- FOOTER  
+--------------------------------------------------
+*/
+.footer__main {
+    height: 70vh;
+    background-color: #202325
+}
+
+.footer__mainfcontainer {
+    display: inline-block;
+}
+
+.lista__footermain {
+    margin: 3vh 5vh 0 5vh;
+    color: #fff;
+    font-family: var(--poppins);
+}
+
+
+
+/*
+--------------------------------------------------
+-- PRECIOS  
+--------------------------------------------------
+*/
+.titulo__precioscontainer {
+    margin-top: 15vh;
+}
+
+.tituloprincipal__precios {
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 4.6vh;
+    margin-top: 10vh;
+}
+
+
+.container__preciosmain {
+    margin-top: 10vh;
+    height: 195vh;
+    background-color: #fff;}
+
+.containercard__preciosmain {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5vh;
+}
+
+.containercard__precios {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 45px 45px 45px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+
+.titulocard__precios {
+    font-size: 1.4rem;
+    margin-top: 1.5vh;
+}
+
+.clasescard__precios {
+    margin-top: 3.4vh;
+    font-size: 1.4rem;
+}
+
+.containercard__preciosmainvip {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5vh;
+}
+
+.containercard__preciosvip {
+    background-color: #202325;
+    box-shadow: 0 0 30px -15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 56px 45px 45px 45px;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+.container__preciosmainvip {
+    height: 265vh;
+}
+
+.titulocard__preciosvip {
+    font-size: 1.2rem;
+    margin-top: 1.5vh;
+}
+
+.clasescard__preciosvip {
+    margin-top: 2.5vh;
+    font-size: 1.4rem;
+}
+
+.duracioncard__preciosvip {
+    margin-top: .1vh;
+    margin-bottom: 4vh;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.vehiculocard__precosvip, .materialcard__precovips, .tramites__precosvip {
+   font-size: .8rem;
+    margin-bottom: 2vh;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .navigation-menu ul {
+        display: none;
+      }
+
+      .navigation-menu ul {
+        position: absolute;
+        top: 60px;
+        right: 0.9vh;
+        flex-direction: column;
+        width: 50%;
+        height: calc(60vh - 94px);
+        background-color: #fffbfbda;
+        border: 2px solid black;
+        border-radius: 15px;
+      }
+
+      .navigation-menu li {
+        text-align: center;
+        margin: 0;
+      }
+
+      .navigation-menu li a {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+      }
+
+      .navigation-menu li:hover {
+        background-color: #eee;
+      }
+
+      .navigation-menu.expanded ul {
+        display: block;
+      }
+      
+      .lista  {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2.2vh;
+      }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+.btn-wsp{
+    width:63px;
+    height:63px;
+    line-height: 66px;
+	}
+}  

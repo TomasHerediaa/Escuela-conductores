@@ -1,7 +1,7 @@
-import './hero.css'
+import "../../global_css.css"
 import { NavLink } from 'react-router-dom';
-import FlechaAbajo from './down.svg'
-import Wsp from './Wp.png'
+import FlechaAbajo from '../../assets/svg/down.svg'
+import Wsp from '../../assets/png/Wp.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react"
 
