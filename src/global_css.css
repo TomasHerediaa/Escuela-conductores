@@ -1401,7 +1401,7 @@ background: #bd0003;
     }
 
     .container__main {
-        height: 87vh;
+        height: 95vh;
         background-color: #ffff;
     
         view-timeline-name: --mostrar;
@@ -1416,7 +1416,7 @@ background: #bd0003;
     
     .dobleComando__main {
         width: 32vh;
-        margin: 7vh 0 0 10%;
+        margin: 7vh 0 0 17%;
     }
 
     
@@ -1426,7 +1426,7 @@ background: #bd0003;
 
     .sensor__main {
         width: 32vh;
-        margin: 7vh 0 0 10%;
+        margin: 7vh 0 0 17%;
     }
 
     .sensor__main img {

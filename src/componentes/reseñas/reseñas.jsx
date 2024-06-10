@@ -4,7 +4,7 @@ function Reseñas() {
     const testimonials = [
         {
             name: 'Mark Zuckerberg',
-            image: 'https://media.discordapp.net/attachments/965069924647206992/1249588160590250064/IMG-20240408-WA0002.jpg?ex=6667d929&is=666687a9&hm=955de5a2c7318043c2e05f3f8bfaa924b8478c90cb53eac33824229401715edf&=&format=webp&width=507&height=676',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg',
             rating: 5,
             content: '"Tomás no solo me enseñó a manejar, sino que también me inculcó la importancia de ser un conductor responsable y seguro. Recomiendo encarecidamente esta academia a cualquier persona que esté buscando no solo obtener una licencia de conducir, sino también adquirir habilidades de conducción duraderas"'
         },
